@@ -64,7 +64,7 @@ do
 	dirname="$(dirname "$f")"
 	basename=$(basename "$f" | cut -d. -f1)
 	output=$dirname/$basename.pdf
-	mycode="/usr/local/bin/rsvg-convert -f pdf -o $output $f"
+	mycode="/opt/homebrew/bin/rsvg-convert -f pdf -o $output $f"
 	#echo $output
 	`$mycode`
 done</string>
